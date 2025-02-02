@@ -1,21 +1,31 @@
 
 #MMOGameServer Project
+
 스킬셋 : C++20, IOCP, Protobuf, nlohmann(json), SQL-Server
+
 github : https://github.com/WillySJHan/MMOGameServer
+
 시현 영상 : https://youtu.be/qx00uF7cN10
+-------------------------------
 ![Image](https://github.com/user-attachments/assets/5ed558c9-01f1-43a8-95f8-291f7c34af13)
-
+--------------------------------
 1. 서버구조
+--------------------------
 ![Image](https://github.com/user-attachments/assets/b66f7a65-6bcb-41a4-83ac-f2bf31d908fa)
-
+----------------------------------
 Task의 예약을 관리하는 TaskSchedular(우선순위 큐) 1개
+
 TaskQueue의 Queue 1개
+
 TaskQueue는 각 Room에 한 개씩 2개
+
 DataBase와 Transaction 하는 TaskQueue 1개 
+
 총 3개
 
 
 - Worker Thread
+----------------------------------------------
 ![Image](https://github.com/user-attachments/assets/e46746de-3613-4d66-a80e-084f4376ae8b)
 
 Room의 GameLogic은 싱글 스레드로 구현 WorkerThread들은 TaskQueue에 Task를 Push 하고
