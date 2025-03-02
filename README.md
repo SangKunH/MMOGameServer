@@ -1,5 +1,5 @@
 
-MMOGameServer Project
+C++ 네트워크 프로래밍, 멀티스레드 프로그래밍 프로젝트
 
 스킬셋 : C++20, IOCP, Protobuf, nlohmann(json), SQL-Server
 
